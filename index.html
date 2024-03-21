@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Examples</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <h1 class="header" id="demo0"></h1>
+
+<div class="content">
+<div class="row">
+<div class="columnheader1 demo1">
+<h2>JavaScript Geolocation</h2>
+    <p>Click the button to get your coordinates.</p>
+    <button onclick="getLocation()">Try It</button>
+    <p id="demo1"></p>
+</div>
+<div class="columnheader2 demo8">
+<h2>JavaScript Web Workers API</h2>
+    <p>Count numbers: <output id="result"></output></p>
+    <button onclick="startWorker()">Start Worker</button> 
+    <button onclick="stopWorker()">Stop Worker</button>
+</div>
+</div>
+
+<div class="row">
+    <div class="column demo2">
+    <h2>JavaScript Validation</h2>
+    <p>Enter a number and click OK:</p>
+    <input id="id1" type="number" min="100" max="300" required> <br>
+    <button onclick="submit1()">OK</button>
+    <p>If the number is less than 100 or greater than 300, an error message will be displayed.</p>
+    <p id="demo2"></p>
+</div>
+<div class="column demo3">
+    <h2>JavaScript Validation 2</h2>
+    <p>Enter a number and click OK:</p>
+    <input id="id2" type="number" max="100"> <br>
+    <button onclick="submit2()">OK</button>
+    <p>If the number is greater than 100 (the input's max attribute), an error message will be displayed.</p>
+    <p id="demo3"></p>
+</div>
+<div class="column demo4">   
+    <h2>JavaScript Validation 3</h2>
+    <p>Enter a number and click OK:</p>
+    <input id="id3" type="number" min="100"> <br>
+    <button onclick="submit3()">OK</button>
+    <p>If the number is less than 100 (the input's min attribute), an error message will be displayed.</p>
+    <p id="demo4"></p>
+</div>
+</div>
+
+<div class="columnfooter1">
+<p id="demo5">Fetch a file to change this text.</p>
+
+<button onclick="goBack()">Go Back</button>
+<button onclick="goForward()">Go Forward</button>
+</div>
+
+<div class="columnfooter2">
+<p id="demo6">Fetch a file to change this text.</p>
+
+<div class="bottumButtons">
+<button onclick="history.back()">Go Back</button>
+<button onclick="history.forward()">Go Forward</button>
+</div>
+</div>
+</div>
+
+<div class="footer">
+<p id="demo7">Fetch a file to change this text.</p>
+</div>
+
+    <script src="app.js"></script>
+</body>
+</html>
